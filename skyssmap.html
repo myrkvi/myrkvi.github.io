@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+crossorigin=""></script>
+<style>
+#map { height: 960px; }
+</style>
+</head>
+<body>
+<h1>a map or sth idk</h1>
+<div id="map"></div>
+<script type="text/javascript">
+let mymap = L.map("map").setView([60.42435, 5.30447], 13);
+
+L.tileLayer(
+'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?{foo}',
+{foo: 'bar', attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}
+).addTo(mymap);
+let markers = L.layerGroup();
+
+
+makeMarkers();
+setInterval(makeMarkers, 15000);
+
+function makeMarkers() {
+fetch(
+'https://api.entur.io/realtime/v1/vehicles/graphql',
+{
+method: 'POST',
+//mode: 'no-cors',
+headers: new Headers({
+'content-type': 'application/graphql',
+'pragma': 'no-cache',
+'cache-control': 'no-store'
+}),
+body: '{vehicles(codespaceId:"SKY"){line{lineRef lineName}lastUpdated location{latitude longitude}}}'
+}
+).then(response=>response.json()).then(data => {
+let d = data;
+markers.eachLayer(layer=>{
+markers.removeLayer(layer);
+mymap.removeLayer(layer);
+})
+d.data.vehicles.forEach((vehicle)=>{
+let line = vehicle.line.lineRef.split(":").slice(-1)[0];
+let lineName = vehicle.line.lineName;
+let lat = vehicle.location.latitude;
+let lon = vehicle.location.longitude;
+
+let marker = L.marker([lat, lon],
+{
+icon: new L.DivIcon({
+className: 'div-icon',
+html: '<span style="background-color: red; font-size: 1.3em;">' + line + '</span>'
+})
+
+});
+marker.addTo(mymap);
+markers.addLayer(marker);
+marker.bindPopup("<b>" + line + "</b><br>" + lineName);
+});
+})
+.catch(console.error);
+}
+</script>
+</body>
+</html>
