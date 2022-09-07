@@ -1,0 +1,933 @@
+<html charset="utf8">
+<head>
+    <title>Plover Chords interactive viewer</title>
+</head>
+<body>
+    <svg
+       width="800px"
+       height="600px"
+       viewBox="0 0 400 300"
+       version="1.1"
+       id="svg5"
+       inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+       sodipodi:docname="chords.svg"
+       xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+       xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+       xmlns:svg="http://www.w3.org/2000/svg"><script>//&lt;![CDATA[
+    function setElemFill(qs, fill) {
+    	document.querySelectorAll(qs).forEach( (i) =&gt; {
+    		i.style.fill = fill
+    	})
+    }
+    //]]&gt;</script>
+    <sodipodi:namedview
+       id="namedview7"
+       pagecolor="#ffffeb"
+       bordercolor="#ffffff"
+       borderopacity="1"
+       inkscape:showpageshadow="0"
+       inkscape:pageopacity="1"
+       inkscape:pagecheckerboard="1"
+       inkscape:deskcolor="#505050"
+       inkscape:document-units="mm"
+       showgrid="false"
+       inkscape:zoom="0.84096521"
+       inkscape:cx="714.65501"
+       inkscape:cy="821.08034"
+       inkscape:window-width="1920"
+       inkscape:window-height="1056"
+       inkscape:window-x="0"
+       inkscape:window-y="24"
+       inkscape:window-maximized="1"
+       inkscape:current-layer="letters" />
+    <defs
+       id="defs2" />
+    <g
+       inkscape:label="Keys"
+       inkscape:groupmode="layer"
+       id="keys">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.705556;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         d="m 45.352778,45.352778 v 25 q 15.000001,10 29.999998,0 v -25 H 45.352778"
+         id="k-key-left"
+         class="left k left-d-chord left-ch-chord left-q-chord left-g-chord left-j-chord left-x-chord left-y-chord left-z-chord-2 left-c-chord" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.705556;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         id="t-key-left"
+         width="30"
+         height="30"
+         x="45.352779"
+         y="5.352778"
+         class="t left left-d-chord left-th-chord left-f-chord left-n-chord left-g-chord left-z-chord-2" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.705556;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         d="m 85.352778,45.352778 v 25 q 15.000002,10 30.000002,0 v -25 H 85.352778"
+         id="w-key-left"
+         class="w left left-b-chord left-q-chord left-g-chord left-j-chord left-y-chord left-z-chord-2" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.705556;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         id="p-key-left"
+         width="30"
+         height="30"
+         x="85.352776"
+         y="5.352778"
+         class="p left left-b-chord left-m-chord left-f-chord left-n-chord left-g-chord left-x-chord left-z-chord-2" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.705556;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         d="m 125.35278,45.352778 v 25 q 15,10 30,0 v -25 h -30"
+         id="r-key-left"
+         class="r left left-l-chord left-v-chord left-j-chord left-y-chord left-c-chord" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.705556;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         id="h-key-left"
+         width="30"
+         height="30"
+         x="125.35278"
+         y="5.352778"
+         class="h left left-l-chord left-ch-chord left-th-chord left-m-chord left-n-chord left-sh-chord" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.705556;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         d="m 205.35278,45.352778 v 25 q 15,10 30,0 v -25 h -30"
+         id="r-key-right"
+         class="r right right-sh-chord right-shs-chord" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.705556;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         d="m 85.352778,85.352778 v 25.000002 q 15.000002,10 30.000002,0 V 85.352778 H 85.352778"
+         id="a-key-left"
+         class="a left aw-chord ay-chord oo-chord oa-chord ee-chord eye-chord" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.705556;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         d="m 125.35278,85.352778 v 25.000002 q 15,10 30,0 V 85.352778 h -30"
+         id="o-key-left"
+         class="o left ow-chord oy-chord oh-chord oo-chord oa-chord ee-chord eye-chord" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.705556;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         d="m 205.35278,85.352778 v 25.000002 q 15,10 30,0 V 85.352778 h -30"
+         id="e-key-right"
+         class="e right i-chord ay-chord oy-chord oh-chord ee-chord eye-chord" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.705556;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         d="m 245.35278,85.352778 v 25.000002 q 15,10 30,0 V 85.352778 h -30"
+         id="u-key-right"
+         class="u right aw-chord ow-chord i-chord ay-chord oy-chord ee-chord eye-chord" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.705556;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         id="f-key-right"
+         width="30"
+         height="30"
+         x="205.35278"
+         y="5.352778"
+         class="f right right-ch-chord right-v-chord" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.705556;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         d="m 245.35278,45.352779 v 25 q 15,10 30,0 v -25 h -30"
+         id="b-key-right"
+         class="b right right-k-chord right-n-chord right-j-chord right-x-chord right-sh-chord right-shs-chord" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.705556;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         id="p-key-right"
+         width="30"
+         height="30"
+         x="245.35278"
+         y="5.352778"
+         class="p right right-ch-chord right-m-chord right-n-chord right-j-chord" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.705556;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         d="m 285.35278,45.352779 v 25 q 15,10 30,0 v -25 h -30"
+         id="g-key-right"
+         class="g right right-k-chord right-j-chord right-x-chord" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.705556;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         id="l-key-right"
+         width="30"
+         height="30"
+         x="285.35278"
+         y="5.352778"
+         class="l right right-m-chord right-j-chord" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.705556;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         d="m 325.35278,45.352779 v 25 q 15,10 30,0 v -25 h -30"
+         id="s-key-right"
+         class="s right right-x-chord right-shs-chord" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.705556;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         id="t-key-right"
+         width="30"
+         height="30"
+         x="325.35278"
+         y="5.352778"
+         class="t right right-th-chord" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.705556;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         d="m 365.35278,45.352779 v 25 q 15,10 30,0 v -25 h -30"
+         id="z-key-right"
+         class="z right" />
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.705556;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         id="d-key-right"
+         width="30"
+         height="30"
+         x="365.35278"
+         y="5.352778"
+         class="d right" />
+      <text
+         xml:space="preserve"
+         style="font-size:16.9333px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="16.336872"
+         y="17.553705"
+         id="text5671"><tspan
+           sodipodi:role="line"
+           id="tspan5669"
+           x="16.336872"
+           y="17.553705"
+           style="stroke-width:0.264583"></tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16.9333px;line-height:1.25;font-family:'Noto Serif';-inkscape-font-specification:'Noto Serif';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="15.233979"
+         y="20.352777"
+         id="text5785"><tspan
+           sodipodi:role="line"
+           id="tspan5783"
+           x="15.233979"
+           y="20.352777"
+           style="stroke-width:0.264583"></tspan></text>
+      <path
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.705556;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 5.3527778,5.352778 v 65 q 15.0000002,10 30.0000002,0 v -65 H 5.3527778"
+         id="s-key-left"
+         class="s left left-v-chord left-j-chord left-z-chord left-z-chord-2 left-sh-chord" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.705556;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 165.35278,5.352778 v 65 q 15,10 30,0 v -65 h -30"
+         id="asterisk-key"
+         class="asterisk right-th-chord right-v-chord left-z-chord" />
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="300.35278"
+         y="185.86792"
+         id="text7397"><tspan
+           sodipodi:role="line"
+           id="tspan7395"
+           style="stroke-width:0.264583"
+           x="300.35278"
+           y="185.86792" /></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16.9333px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="15.67072"
+         y="46.390919"
+         id="text5801"><tspan
+           sodipodi:role="line"
+           id="tspan5799"
+           x="15.67072"
+           y="46.390919"
+           style="stroke-width:0.264583">S</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16.9333px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="55.65379"
+         y="26.397966"
+         id="text5809"><tspan
+           sodipodi:role="line"
+           id="tspan5807"
+           x="55.65379"
+           y="26.397966"
+           style="stroke-width:0.264583">T</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16.9333px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="54.290657"
+         y="66.390915"
+         id="text5813"><tspan
+           sodipodi:role="line"
+           id="tspan5811"
+           x="54.290657"
+           y="66.390915"
+           style="stroke-width:0.264583">K</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16.9333px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="94.840988"
+         y="26.397966"
+         id="text5817"><tspan
+           sodipodi:role="line"
+           id="tspan5815"
+           x="94.840988"
+           y="26.397966"
+           style="stroke-width:0.264583">P</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16.9333px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="92.487259"
+         y="66.390915"
+         id="text5821"><tspan
+           sodipodi:role="line"
+           id="tspan5819"
+           x="92.487259"
+           y="66.390915"
+           style="stroke-width:0.264583">W</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16.9333px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="134.08746"
+         y="26.397966"
+         id="text5825"><tspan
+           sodipodi:role="line"
+           id="tspan5823"
+           x="134.08746"
+           y="26.397966"
+           style="stroke-width:0.264583">H</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16.9333px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="134.39226"
+         y="66.390915"
+         id="text5829"><tspan
+           sodipodi:role="line"
+           id="tspan5827"
+           x="134.39226"
+           y="66.390915"
+           style="stroke-width:0.264583">R</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16.9333px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="175.70459"
+         y="49.405045"
+         id="text5833"><tspan
+           sodipodi:role="line"
+           id="tspan5831"
+           x="175.70459"
+           y="49.405045"
+           style="stroke-width:0.264583">*</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16.9333px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="215.33206"
+         y="26.397966"
+         id="text5841"><tspan
+           sodipodi:role="line"
+           id="tspan5839"
+           x="215.33206"
+           y="26.397966"
+           style="stroke-width:0.264583">F</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16.9333px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="214.39226"
+         y="66.390915"
+         id="text5845"><tspan
+           sodipodi:role="line"
+           id="tspan5843"
+           x="214.39226"
+           y="66.390915"
+           style="stroke-width:0.264583">R</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16.9333px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="254.84099"
+         y="26.397966"
+         id="text5849"><tspan
+           sodipodi:role="line"
+           id="tspan5847"
+           x="254.84099"
+           y="26.397966"
+           style="stroke-width:0.264583">P</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16.9333px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="254.4854"
+         y="66.390923"
+         id="text5853"><tspan
+           sodipodi:role="line"
+           id="tspan5851"
+           x="254.4854"
+           y="66.390923"
+           style="stroke-width:0.264583">B</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16.9333px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="295.30667"
+         y="26.397966"
+         id="text5857"><tspan
+           sodipodi:role="line"
+           id="tspan5855"
+           x="295.30667"
+           y="26.397966"
+           style="stroke-width:0.264583">L</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16.9333px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="294.29913"
+         y="66.390923"
+         id="text5861"><tspan
+           sodipodi:role="line"
+           id="tspan5859"
+           x="294.29913"
+           y="66.390923"
+           style="stroke-width:0.264583">G</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16.9333px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="335.65378"
+         y="26.397966"
+         id="text5865"><tspan
+           sodipodi:role="line"
+           id="tspan5863"
+           x="335.65378"
+           y="26.397966"
+           style="stroke-width:0.264583">T</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16.9333px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="335.67072"
+         y="66.390923"
+         id="text5869"><tspan
+           sodipodi:role="line"
+           id="tspan5867"
+           x="335.67072"
+           y="66.390923"
+           style="stroke-width:0.264583">S</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16.9333px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="373.86734"
+         y="26.397966"
+         id="text5873"><tspan
+           sodipodi:role="line"
+           id="tspan5871"
+           x="373.86734"
+           y="26.397966"
+           style="stroke-width:0.264583">D</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16.9333px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="375.51831"
+         y="66.390923"
+         id="text5877"><tspan
+           sodipodi:role="line"
+           id="tspan5875"
+           x="375.51831"
+           y="66.390923"
+           style="stroke-width:0.264583">Z</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16.9333px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="94.951057"
+         y="106.41632"
+         id="text5881"><tspan
+           sodipodi:role="line"
+           id="tspan5879"
+           x="94.951057"
+           y="106.41632"
+           style="stroke-width:0.264583">A</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16.9333px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="133.74033"
+         y="106.39938"
+         id="text5885"><tspan
+           sodipodi:role="line"
+           id="tspan5883"
+           x="133.74033"
+           y="106.39938"
+           style="stroke-width:0.264583">O</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16.9333px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="215.33206"
+         y="106.39092"
+         id="text5889"><tspan
+           sodipodi:role="line"
+           id="tspan5887"
+           x="215.33206"
+           y="106.39092"
+           style="stroke-width:0.264583">E</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16.9333px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="254.17212"
+         y="106.30625"
+         id="text5893"><tspan
+           sodipodi:role="line"
+           id="tspan5891"
+           x="254.17212"
+           y="106.30625"
+           style="stroke-width:0.264583">U</tspan></text>
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="letters"
+       inkscape:label="Letters">
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="131.67677"
+         y="164.66847"
+         id="a"><tspan
+           sodipodi:role="line"
+           id="tspan8944"
+           style="stroke-width:0.264583"
+           x="131.67677"
+           y="164.66847">A</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="145.2545"
+         y="164.65578"
+         id="b"><tspan
+           sodipodi:role="line"
+           id="tspan8948"
+           style="stroke-width:0.264583"
+           x="145.2545"
+           y="164.65578">B</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="159.95828"
+         y="164.65578"
+         id="c"><tspan
+           sodipodi:role="line"
+           id="tspan8952"
+           style="stroke-width:0.264583"
+           x="159.95828"
+           y="164.65578">C</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="174.05247"
+         y="164.65578"
+         id="d"><tspan
+           sodipodi:role="line"
+           id="tspan8956"
+           style="stroke-width:0.264583"
+           x="174.05247"
+           y="164.65578">D</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="188.45146"
+         y="164.65578"
+         id="e"><tspan
+           sodipodi:role="line"
+           id="tspan8960"
+           style="stroke-width:0.264583"
+           x="188.45146"
+           y="164.65578">E</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="202.85045"
+         y="164.65578"
+         id="f"><tspan
+           sodipodi:role="line"
+           id="tspan8964"
+           style="stroke-width:0.264583"
+           x="202.85045"
+           y="164.65578">F</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="217.55424"
+         y="164.65578"
+         id="g"><tspan
+           sodipodi:role="line"
+           id="tspan8968"
+           style="stroke-width:0.264583"
+           x="217.55424"
+           y="164.65578">G</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="231.64842"
+         y="164.65578"
+         id="h"><tspan
+           sodipodi:role="line"
+           id="tspan8972"
+           style="stroke-width:0.264583"
+           x="231.64842"
+           y="164.65578">H</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="246.53001"
+         y="164.65578"
+         id="i"><tspan
+           sodipodi:role="line"
+           id="tspan8976"
+           style="stroke-width:0.264583"
+           x="246.53001"
+           y="164.65578">I</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="132.33717"
+         y="173.38774"
+         id="j"><tspan
+           sodipodi:role="line"
+           id="tspan8980"
+           style="stroke-width:0.264583"
+           x="132.33717"
+           y="173.38774">J</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="145.2545"
+         y="174.19206"
+         id="k"><tspan
+           sodipodi:role="line"
+           id="tspan8984"
+           style="stroke-width:0.264583"
+           x="145.2545"
+           y="174.19206">K</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="159.65349"
+         y="174.19206"
+         id="l"><tspan
+           sodipodi:role="line"
+           id="tspan8988"
+           style="stroke-width:0.264583"
+           x="159.65349"
+           y="174.19206">L</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="174.05247"
+         y="174.19206"
+         id="m"><tspan
+           sodipodi:role="line"
+           id="tspan8992"
+           style="stroke-width:0.264583"
+           x="174.05247"
+           y="174.19206">M</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="188.45146"
+         y="174.19206"
+         id="n"><tspan
+           sodipodi:role="line"
+           id="tspan8996"
+           style="stroke-width:0.264583"
+           x="188.45146"
+           y="174.19206">N</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="203.15524"
+         y="174.1963"
+         id="o"><tspan
+           sodipodi:role="line"
+           id="tspan9000"
+           style="stroke-width:0.264583"
+           x="203.15524"
+           y="174.1963">O</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="217.24944"
+         y="174.19206"
+         id="p"><tspan
+           sodipodi:role="line"
+           id="tspan9004"
+           style="stroke-width:0.264583"
+           x="217.24944"
+           y="174.19206">P</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="231.95323"
+         y="173.51897"
+         id="q"><tspan
+           sodipodi:role="line"
+           id="tspan9008"
+           style="stroke-width:0.264583"
+           x="231.95323"
+           y="173.51897">Q</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="246.04741"
+         y="174.19206"
+         id="r"><tspan
+           sodipodi:role="line"
+           id="tspan9012"
+           style="stroke-width:0.264583"
+           x="246.04741"
+           y="174.19206">R</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="131.24498"
+         y="183.72836"
+         id="s"><tspan
+           sodipodi:role="line"
+           id="tspan9016"
+           style="stroke-width:0.264583"
+           x="131.24498"
+           y="183.72836">S</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="145.99109"
+         y="183.72836"
+         id="t"><tspan
+           sodipodi:role="line"
+           id="tspan9020"
+           style="stroke-width:0.264583"
+           x="145.99109"
+           y="183.72836">T</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="159.71275"
+         y="183.68604"
+         id="u"><tspan
+           sodipodi:role="line"
+           id="tspan9024"
+           style="stroke-width:0.264583"
+           x="159.71275"
+           y="183.68604">U</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="174.87373"
+         y="183.72836"
+         id="v"><tspan
+           sodipodi:role="line"
+           id="tspan9028"
+           style="stroke-width:0.264583"
+           x="174.87373"
+           y="183.72836">V</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="189.17113"
+         y="183.72836"
+         id="w"><tspan
+           sodipodi:role="line"
+           id="tspan9032"
+           style="stroke-width:0.264583"
+           x="189.17113"
+           y="183.72836">W</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="203.63785"
+         y="183.72836"
+         id="x"><tspan
+           sodipodi:role="line"
+           id="tspan9036"
+           style="stroke-width:0.264583"
+           x="203.63785"
+           y="183.72836">X</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="232.14796"
+         y="183.72836"
+         id="z"><tspan
+           sodipodi:role="line"
+           id="tspan9044"
+           style="stroke-width:0.264583"
+           x="232.14796"
+           y="183.72836">Z</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="214.08473"
+         y="211.49716"
+         id="ch"><tspan
+           sodipodi:role="line"
+           id="tspan9048"
+           style="stroke-width:0.264583"
+           x="214.08473"
+           y="211.49716">CH</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="174.68848"
+         y="211.49716"
+         id="sh"><tspan
+           sodipodi:role="line"
+           id="tspan9052"
+           style="stroke-width:0.264583"
+           x="174.68848"
+           y="211.49716">SH</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="185.18524"
+         y="243.97491"
+         id="ay"><tspan
+           sodipodi:role="line"
+           id="tspan9056"
+           style="stroke-width:0.264583"
+           x="185.18524"
+           y="243.97491">ay</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="202.91063"
+         y="243.97913"
+         id="oy"><tspan
+           sodipodi:role="line"
+           id="tspan9060"
+           style="stroke-width:0.264583"
+           x="202.91063"
+           y="243.97913">oy</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="202.91063"
+         y="257.51355"
+         id="oh"><tspan
+           sodipodi:role="line"
+           id="tspan9064"
+           style="stroke-width:0.264583"
+           x="202.91063"
+           y="257.51355">oh</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="185.10904"
+         y="256.6076"
+         id="ee"><tspan
+           sodipodi:role="line"
+           id="tspan9068"
+           style="stroke-width:0.264583"
+           x="185.10904"
+           y="256.6076">ee</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="185.10904"
+         y="267.28876"
+         id="eye"><tspan
+           sodipodi:role="line"
+           id="tspan9072"
+           style="stroke-width:0.264583"
+           x="185.10904"
+           y="267.28876">eye</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="218.07071"
+         y="183.72836"
+         id="y"><tspan
+           sodipodi:role="line"
+           id="tspan10663"
+           style="stroke-width:0.264583"
+           x="218.07071"
+           y="183.72836">Y</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="194.42894"
+         y="211.49716"
+         id="shs"><tspan
+           sodipodi:role="line"
+           id="tspan10667"
+           style="stroke-width:0.264583"
+           x="194.42894"
+           y="211.49716">SHS</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="246.54695"
+         y="183.25423"
+         id="z2"><tspan
+           sodipodi:role="line"
+           id="tspan10671"
+           style="stroke-width:0.264583"
+           x="246.54695"
+           y="183.25423">Z (alt)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="185.18524"
+         y="233.29376"
+         id="aw"><tspan
+           sodipodi:role="line"
+           id="tspan10675"
+           style="stroke-width:0.264583"
+           x="185.18524"
+           y="233.29376">aw</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="202.91063"
+         y="233.298"
+         id="ow"><tspan
+           sodipodi:role="line"
+           id="tspan10679"
+           style="stroke-width:0.264583"
+           x="202.91063"
+           y="233.298">ow</tspan></text>
+    </g>
+    </svg>
+    <div>
+        The letters below the stenography keyboard will light up the keyboard if there are any matching chords. The names of letters/sounds and chords are from the web site "Art of Chording".
+    </div>
+    <script>
+        function setElemFill(qs, fill) {
+        	document.querySelectorAll(qs).forEach( (i) => {
+        		i.style.fill = fill
+        	})
+        }
+
+        function addHoverHandlersForKey(key, chordColorPairs) {
+        	document.querySelectorAll("g#letters #" + key).forEach( (i) => {
+        		Object.entries(chordColorPairs).forEach( ([chord, color]) => {
+        			i.addEventListener("mouseenter", (e) => {
+        				document.querySelectorAll("." + chord).forEach( (ch) => {
+        					ch.style.fill = color
+        				})
+        			})
+        			i.addEventListener("mouseleave", (e) => {
+        				document.querySelectorAll("." + chord).forEach( (ch) => {
+        					ch.style.fill = "none"
+        				})
+        			})
+        		})
+    		})
+    	}
+
+    	addHoverHandlersForKey("ch", {"left-ch-chord": "limegreen", "right-ch-chord": "deepskyblue"})
+    	addHoverHandlersForKey("k", {"right-k-chord": "limegreen"})
+    	addHoverHandlersForKey("aw", {"aw-chord": "limegreen"})
+    	addHoverHandlersForKey("ow", {"ow-chord": "limegreen"})
+    	addHoverHandlersForKey("d", {"left-d-chord": "limegreen"})
+    	addHoverHandlersForKey("b", {"left-b-chord": "limegreen"})
+    	addHoverHandlersForKey("l", {"left-l-chord": "limegreen"})
+    	addHoverHandlersForKey("th", {"left-th-chord": "limegreen", "right-th-chord": "deepskyblue"})
+    	addHoverHandlersForKey("i", {"i-chord": "limegreen"})
+    	addHoverHandlersForKey("m", {"left-m-chord": "limegreen", "right-m-chord": "deepskyblue"})
+    	addHoverHandlersForKey("f", {"left-f-chord": "limegreen"})
+    	addHoverHandlersForKey("q", {"left-q-chord": "limegreen"})
+    	addHoverHandlersForKey("ay", {"ay-chord": "limegreen"})
+    	addHoverHandlersForKey("oy", {"oy-chord": "limegreen"})
+    	addHoverHandlersForKey("n", {"left-n-chord": "limegreen", "right-n-chord": "deepskyblue"})
+    	addHoverHandlersForKey("oh", {"oh-chord": "limegreen"})
+    	addHoverHandlersForKey("v", {"left-v-chord": "limegreen", "right-v-chord": "deepskyblue"})
+    	addHoverHandlersForKey("g", {"left-g-chord": "limegreen"})
+    	addHoverHandlersForKey("j", {"left-j-chord": "limegreen", "right-j-chord": "deepskyblue"})
+    	addHoverHandlersForKey("x", {"left-x-chord": "limegreen", "right-x-chord": "deepskyblue"})
+    	addHoverHandlersForKey("you", {"you-chord": "limegreen"})
+    	addHoverHandlersForKey("oo", {"oo-chord": "limegreen"})
+    	addHoverHandlersForKey("y", {"left-y-chord": "limegreen"})
+    	addHoverHandlersForKey("z", {"left-z-chord": "limegreen"})
+    	addHoverHandlersForKey("z2", {"left-z-chord-2": "limegreen"})
+    	addHoverHandlersForKey("ee", {"ee-chord": "limegreen"})
+    	addHoverHandlersForKey("ea", {"ea-chord": "limegreen"})
+    	addHoverHandlersForKey("sh", {"left-sh-chord": "limegreen", "right-sh-chord": "deepskyblue"})
+    	addHoverHandlersForKey("shs", {"right-shs-chord": "limegreen"})
+    	addHoverHandlersForKey("eye", {"eye-chord": "limegreen"})
+    	addHoverHandlersForKey("c", {"left-c-chord": "limegreen"})
+
+    </script>
+</body>
+</html>
